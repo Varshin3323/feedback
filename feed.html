@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: white; padding: 20px; }
+        .container { width: 50%; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, textarea, select { width: 100%; margin: 10px 0; padding: 10px; }
+        .btn { background: blue; color: white; padding: 10px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form>
+            <label>Name:</label>
+            <input type="text" name="name">
+            
+            <label>Email :</label>
+            <input type="email" name="email">
+            
+            <label>Phone :</label>
+            <input type="tel" name="phone">
+            
+            <label>Rating :</label>
+            <select name="rating" required>
+                <option value="">Select Rating</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Good</option>
+                <option value="3">3 - Average</option>
+                <option value="2">2 - Poor</option>
+                <option value="1">1 - Very Poor</option>
+            </select>
+            
+            <label>Questions Regarding Product/Service:</label>
+            <textarea name="questions"></textarea>
+            
+            <label>Additional Comments :</label>
+            <textarea name="comments"></textarea>
+            
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
